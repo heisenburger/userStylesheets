@@ -1,0 +1,63 @@
+@-moz-document domain(twitter.com) {
+  article {
+    margin: 2rem 0 !important;
+  }
+  [data-testid="primaryColumn"] {
+    max-width: 100% !important;
+  }
+  [data-testid="sidebarColumn"] {
+    display: none !important;
+  }
+  main>div>div {
+    background-color: white !important;
+  }
+}
+
+@-moz-document domain(facebook.com) {
+}
+
+@-moz-document domain(mail.google.com) {
+  * {
+    border-radius: 0 !important;
+  }
+  [role="main"] {
+    padding: 0 2rem;
+  }
+  [aria-label="Hangouts"] {
+    display: none;
+  }
+
+}
+
+@-moz-document domain(calendar.google.com) {
+  [aria-label="Create"],
+  #drawerMiniMonthNavigator,
+  .LXjtcc {
+    display: none !important;
+  }
+}
+
+@-moz-document domain(archiveofourown.org) {
+  #workskin {
+    font-size: 20px !important;
+    font-family: "Athelas", serif !important;
+  }
+  .userstuff p {
+    line-height: 1.75 !important;
+    max-width: 40em !important;
+  }
+  @media print { 
+    #workskin {
+      font-size: 20px !important;
+      font-family: "Athelas", serif !important;
+    }
+    .userstuff p {
+      line-height: 1.75 !important;
+      max-width: 40em !important;
+    }
+    #header, #admin-banner, #feedback, #footer,
+    dl[role="complementary"] {
+      display: none;
+    }
+  }
+}
