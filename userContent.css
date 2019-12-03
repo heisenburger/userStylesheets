@@ -1,19 +1,9 @@
 @-moz-document domain(twitter.com) {
-  article {
-    margin: 2rem 0 !important;
-  }
-  [data-testid="primaryColumn"] {
-    max-width: 100% !important;
-  }
-  [data-testid="sidebarColumn"] {
-    display: none !important;
-  }
-  main>div>div {
-    background-color: white !important;
-  }
+
 }
 
 @-moz-document domain(facebook.com) {
+
 }
 
 @-moz-document domain(mail.google.com) {
